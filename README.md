@@ -1,6 +1,6 @@
 > [[_000 HOME]] | [[004 PG - Programming]] | [[104 JAVA - Java]]
 ---
-# Java Cheat Sheat
+# Java Cheat Sheet
 #PG  #JAVA  
 ---
 ## **Primitive Data Types**
