@@ -164,10 +164,10 @@ public class Operators {
 				}
 
 			}
-		} else {
-			System.out.println("No package");
-		}
+		} 
 
+		System.out.println(); //spacing
+		
 		// checking every condition at once
 		if (myPackage != null && weight <= 49 && length <= 25 && !isInternational && shape == "square") {
 
@@ -176,7 +176,7 @@ public class Operators {
 			System.out.println(destination);
 			System.out.println("Estimated time for delivery: " + deliveryTime + " days.");
 		} else {
-			System.out.println();
+			System.out.println("Too bad, customer!");
 		}
 
 	}
