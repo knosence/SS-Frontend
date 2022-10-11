@@ -44,6 +44,7 @@ public class WrapperClasses {
 			System.out.println(myInt);
 		}
 	
+		System.out.println();
 		//... but a LinkedList CANNOT -- must hold Objects
 		// so we use the Integer wrapper class
 		LinkedList<Integer> myLinkedList = new LinkedList<Integer>();
@@ -53,12 +54,14 @@ public class WrapperClasses {
 		myLinkedList.add(new Integer(9));
 		myLinkedList.add(new Integer(10));
 		
-		for (Integer nums : myLinkedList) {
-			System.out.println(nums);
+		for (Integer num : myLinkedList) {
+			System.out.println(num);
 		}
 		
-		
-		
+		//wrapper classes have some methods that primitives do not 
+		// can be useful when converting types, for instance
+		String myLongAsaString = myLong.toString();
+		System.out.println(myLongAsaString);
 		
 	}
 
