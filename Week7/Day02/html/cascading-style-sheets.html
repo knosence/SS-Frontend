@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading Style Sheets</title>
+
+
+    <style>
+        body, main {
+            font-style: italic;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            border: opx;
+        }
+
+        body {
+            background-image: url("../images/stary-sky.jpg");
+        }
+
+        main {
+            padding: 32px;
+            background-color: rgba(255, 255, 255, 0.8);
+            height: 100%;
+        }
+
+        article {
+            font-style: normal;
+        }
+
+        section{
+            font-style: italic;
+        }
+
+        .awesome-heading {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 40px;
+            background-color: blanchedalmond;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 3px solid #0f65c8
+            
+        }
+
+        section p {
+            color: red;
+        }
+
+        /*
+            if i did this
+            p>section {}
+
+            it would apply ONLY to p tags that ar DIRECT childrien of sections
+        */
+
+        .sun-image {
+            width: 250px;
+            float: right;
+            /*margin-left: 24px;
+            margin-bottom: 12px;*/
+            margin: 0px 0px 12px 24px;
+
+        }
+
+        #planets-list {
+            float: right;
+            border: 3px solid #0f65c8;
+            background-color: rgb(255, 231, 205);
+            padding-right: 32px;
+            margin-left: 24px;
+            margin-bottom: 12px;;
+        }
+
+        nav {
+            background-color: rgb(227, 151, 11);
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            font-style: normal;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0px;
+            padding: 16px 32px;
+            background-color: none;
+            transition: color 0.3s;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            color: rgba(255, 255, 255, 0.8);
+            background-color: #0f65c8;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="../index.html">Edwins's Tasty Market Homepage</a>
+        <a href="about-us.html">About Us</a>
+        <a href="our-products.html">Our Products</a>
+    </nav>
+    
+    <main>
+
+        <article>
+            <h1 class="awesome-heading">The solar System</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorem eaque ipsa sint officia fuga natus ullam nemo! Fugit illo incidunt quia et ea provident repellendus ratione officia ad veritatis?</p>
+
+            <section>
+
+                <img class="sun-image" src="../images/the sun.jpg" alt="The Sun, duh">
+                <h2>The Sun</h2> 
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium excepturi suscipit quisquam hic obcaecati eaque, nemo laboriosam harum tenetur repudiandae nihil. Ipsam mollitia corrupti nulla error molestiae incidunt rem recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eaque excepturi odit corrupti mollitia consequatur, nam animi earum dolores nobis ipsum. Deserunt dicta ut doloribus provident. Autem molestias at quia!
+                Beatae optio doloremque at architecto laborum ex, rem praesentium, accusantium iusto adipisci quod quibusdam corporis veritatis odit eligendi facere ullam molestiae possimus sit vero qui. Nesciunt inventore repellat corrupti hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae vitae qui. Odit, cum autem incidunt sed molestiae ipsum ea eaque eum, provident, voluptate exercitationem. Modi exercitationem provident suscipit commodi?</p>
+            </section>
+
+            <section>
+                <aside id="planets-list">
+                    <ul>
+                        <li>Mercury</li>
+                        <li>Venus</li>
+                        <li>Earth</li>
+                        <li>Mars</li>
+                        <li>Jupiter</li>
+                        <li>Saturn</li>
+                        <li>Uranus</li>
+                        <li>Neptune</li>
+                    </ul>
+                </aside>
+                <h2>The Planets</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quas tempora quaerat cum assumenda nesciunt? Error ullam soluta aliquam inventore minus voluptate! Dignissimos eligendi rem magnam reiciendis consequuntur sunt sapiente. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, minima vel commodi corrupti nesciunt eligendi sequi possimus placeat quisquam totam exercitationem minus blanditiis sunt similique quae quos impedit aliquid iste.
+                Velit reprehenderit laborum obcaecati illum enim porro tempora itaque, id assumenda dolores debitis qui ex nihil magni corporis harum ipsam blanditiis a facilis dolorum minus, sed nulla? Possimus, optio voluptatem?</p>
+                
+                <footer>
+                    <p>Additional information abou the planets goes here</p>
+                </footer>
+           
+            </section>
+
+        </article>
+
+    </main>
+
+</body>
+
+</html>

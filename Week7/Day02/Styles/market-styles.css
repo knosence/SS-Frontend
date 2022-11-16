@@ -1,0 +1,18 @@
+/* 
+    This is an external stylesheet 
+    
+
+*/
+
+body {
+    background-color: lightgray;
+    padding: 50px;
+}
+
+#nav-bar{
+    background-color: lightyellow;
+}
+
+.img-border {
+    border: 5px solid black;
+}

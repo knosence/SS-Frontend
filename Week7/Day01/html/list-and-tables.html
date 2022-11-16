@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List and Tables</title>
+</head>
+
+<body>
+
+    <!-- List in HTML -->
+
+    <!--
+        Two kinds of lists:
+
+        Unordered list -- <ul>
+        Ordered list -- <ol>
+
+        All are block tags, 
+        Each of these has one or more list items -- <li>
+
+        
+    -->
+
+    <!-- unordered list with bullets -->
+    <ul>
+        <li>Workout Clothes</li>
+        <li>Hat</li>
+        <li>Undergraments</li>
+    </ul>
+
+    <!-- Ordered list with numbers -->
+    <ol>
+        <li>Collect the clothes</li>
+        <li>Get the laundry detergent</li>
+        <ul>
+            <li>Check my wallet</li>
+            <li>Choose one my landloard doesn't think smells like chemica;s</li>
+            <li>commit</li>
+        </ul>
+        <li>put laundry in washer</li>
+        <li>pray they dont bleed pink into brian's hat</li>
+    </ol>
+<!-- hr= horizontal rule, a line that goes across the page  -->
+<hr>
+    <!-- Tables-->
+
+    <!-- 
+        Tables used to be how a lot of sites were desiged
+        structurally -- this is HIGHLY deprecated
+
+        The table and its row/s cells will scale to the largest of each
+
+        Several tags go into making a table:
+
+        table -- the overall table itself
+        thead -- the entire header area of the table (can have mulitple rows)
+        th -- table header "cell"
+        tbody -- the main body of the table
+        tr -- individual table row
+        td -- table data (an individual "cell" in the table)
+        tfoot -- the footer row(s) of the table
+     -->
+
+     <!-- The table itself -->
+     <table>
+        <!-- The table header area -->
+        <thead>
+            <!-- an individual table row -->
+            <tr style="text-align: left;">
+                <!-- a non-header table cell -->
+                <th>Name</th>
+                <th>Funds</th>
+                <th>detergent Preference</th>
+            </tr>
+        </thead>
+        <!-- the main body of the table -->
+        <tbody>
+            <tr>
+                <!-- a non-header table -->
+                <td>Jonathan Provan</td>
+                <td>$1.50</td>
+                <td>All Free And Clear</td>
+            </tr>
+            <tr>
+                <td>Dylan Howard</td>
+                <td>$10.00</td>
+                <td>Tide Pods</td>
+            </tr>
+            <tr>
+                <td>Aaliyah Bloise</td>
+                <td>$20.00</td>
+                <td>Gain Pods</td>
+            </tr>
+        </tbody>
+        <!--the footer area of the table -->
+        <tfoot>
+            <tr>
+                <td>Your name here!</td>
+                <td>Indicate your place in the caste system:</td>
+                <td>dont eat the podss.</td>
+            </tr>
+        </tfoot>
+     </table>
+
+</body>
+</html>
