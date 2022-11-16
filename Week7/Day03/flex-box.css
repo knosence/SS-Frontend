@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(234, 231, 231);
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* 
+        justify-content
+
+        baseline
+        space-between
+        space-around
+        center
+    */
+
+    justify-content: space-between;
+
+}
+.item {
+    width: 6em;
+    padding: 3em 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: rgb(18, 211, 18);
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}
