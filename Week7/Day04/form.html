@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <!-- HTML FORMS -->
+
+    <!-- Forms are how we collect informaiton from a user -->
+
+    <!-- we can have the user fill in important information, such as:
+    
+        Name
+        Age
+        Email Address
+        Phone number
+        Any other data we may wish to collect
+
+        we can use various tags and types for different types of information
+
+        - form
+        - input
+        - select
+        - button
+        
+        The inpute tags is arguably the most common and can accept different types of data:
+
+        -text (defualt)
+        - number (usually we dont use this for number fields with specifics formats, like phone numbers or zip codes, generally just for input values we're going to use in some form of arthmetic)
+        - date
+        - color
+        - radio buttons (multiple choice where you can only select one and the others "turn off")
+        - checkboxes (can check on and off individually)
+        - password (input is hidden by defualt)
+        - email
+        - file uploads
+
+    -->
+
+    <!-- We must enclose all fields we want to include in our form submission in the form tag -->
+
+
+    <!-- in HTML, forms only use the GET and POST method -->
+
+    <!-- CRUD Operations 
+    
+        these are database operations
+        C = create
+        R = read
+        U = update
+        D = delete
+
+        HTML methods/HTTP requests:
+        POST = Create
+        GET = read
+        PUT = update
+        DELETE = delete
+        
+    -->
+
+    <!-- The form tag has two unique attributes:
+        
+        method = HTTP method (GET or POST)
+        action = URL to which we send the HTTP request to
+    -->
+
+    <form action="../Day02/index.html" method="GET">
+
+        <div>
+            <label for="first-name">First Name:</label>
+            <input id="first-name" type="text" name="first-name" placeholder="Enter your first name here..."/>
+        </div>
+
+        <div>
+            <label for="Last-name">Last Name:</label>
+            <input id="Last-name" type="text" name="last-name" placeholder="Enter last name..." />
+        </div>
+
+        <div>
+            <label for="favorite-color">Favorite Color</label>
+            <input id="favorite-color" type="color" name="favorite-color" />
+        </div>
+
+        <div>
+            <label for="favorite-number">Favorite  Number</label>
+            <input id="favorite-number"  type="number" name="favorite-number" />
+        </div>
+
+        <div>
+            <label for="birthday">Birthday</label>
+            <input id="birthday" type="date" name="birthday" />
+
+        </div>
+
+        <div>
+            <label for="phone-number">Phone Number</label>
+            <input id="phone-number" type="tel" name="phone-number">
+        </div>
+
+        <div>
+            <label for="home-state">Home State</label>
+            <select name="home-state" id="home-state">
+                <option value="AL">Alabama</option>
+                <option value="CT">Connecticut</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="NC">North Carolina</option>
+                <option value="NJ">New Jersey</option>
+                <option value="TX">Texas</option>
+            </select>
+        </div>
+
+        <div>
+            Choose things you love (select all that apply) :
+        </div>
+
+        <div>
+            <input id="animel-lover" type="checkbox" value="Yes" name="animel-lover" />
+            <label for="animal-lover">Animal Lover</label>
+        </div>
+
+        <div>
+            <input id="vegetable-lover" type="checkbox" value="Yes" name="vegetable-lover" />
+            <label for="vegetable-lover">Vegetable Lover</label>
+        </div>
+
+        <br><br>
+
+        <div>Chose your pet perference</div>
+
+        <div>
+            <input id="dog-person" type="radio" value="Dog Person" name="pet-preference" />
+            <label for="dog-person">Dog Person</label>
+
+        </div>
+
+        <div>
+            <input id="cat-person" type="radio" value="Cat Person" name="pet-preference" />
+            <label for="cat-person">Cat Person</label>
+
+        </div>
+
+        <div>
+            <input id="fish-person" type="radio" value="Fish Person" name="pet-preference" />
+            <label for="fish-person">Fish Person</label>
+
+        </div>
+
+        <br><br>
+
+        <button type="reset">RESET</button>
+
+        <!-- this is a submit button -->
+        <button type="submit">SUBMIT</button>
+    </form>
+
+
+</body>
+</html>
