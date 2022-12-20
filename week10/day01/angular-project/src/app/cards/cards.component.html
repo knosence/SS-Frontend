@@ -1,0 +1,37 @@
+<main>
+  <!-- ng-container is a semantic free, style-free container
+        for which we can create display conditions-->
+  <ng-container *ngFor="let pokemon of pokemonList">
+    <app-card [pokemon]="pokemon"></app-card>
+  </ng-container>
+
+  <button (click)="addPokemon('Mr. Mime', 'Psychic', 'Pink, white and Blue')">Mime Me!!</button>
+
+
+  <ng-container *ngIf="false">
+    <br /><br /><br />
+    <app-card [pokemon]="pokemonThree"></app-card>
+
+    <br /><br />
+    <section>
+      <!-- double curly braces binds to the variable int the associated .ts file -->
+      <!-- this dose not grab variables from any other .ts file -->
+      <h2>{{ pokemonOneName }}</h2>
+      <h3>{{ pokemonOneType }}</h3>
+      <p>{{ pokemonOneColor }}</p>
+    </section>
+    <section>
+      <h2>{{ pokemonTwo.name }}</h2>
+      <h3>{{ pokemonTwo.type }}</h3>
+      <p>{{ pokemonTwo.color }}</p>
+    </section>
+    
+    <!-- () indicate event binding
+        when ever the even inside occurs, it triggers the action -->
+        <button (click)="changeName('Lickitung')">Change Name!</button>
+        <button (click)="changeName('Charizard')">Change Back!</button>
+        <br /><br />
+        <button (click)="changeColor('Pale yellow')">Change Color!</button>
+        <button (click)="changeColor('Blanched Almond')">Change Back!</button>
+    </ng-container>
+</main>

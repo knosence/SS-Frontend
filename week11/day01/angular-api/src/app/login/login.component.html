@@ -1,0 +1,15 @@
+<main>
+    <h2>LOG IN</h2>
+
+    <form class="loginForm">
+        <label class="formLabel" for="email">E-Mail Address</label>
+        <input [(ngModel)]="email" class="formField" type="text" name="email" id="email" placeholder="Enter e-mail address">
+        
+        <label class="formLabel" for="email">Password</label>
+        <input [(ngModel)]="password" class="formField" type="password" name="password" id="password" placeholder="Enter Password">
+        
+        <button (click)="login()" class="submitButton">LOG IN</button>
+    </form>
+
+<button style="margin-top: 24px;" (click)="devLogin()" class="submitButton">DEV LOG IN</button>
+</main>

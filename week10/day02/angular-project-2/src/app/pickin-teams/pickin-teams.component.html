@@ -1,0 +1,37 @@
+<main>
+  <h2>PICKIN' TEAMS!</h2>
+  <section>
+    <h3>NAME POOL</h3>
+    <ng-container *ngFor="let name of namePool; let i = index">
+      <app-name-card
+        [name]="name"
+        [location]="inNamePool"
+        (teamchangeEvent)="changeTeam(i, inNamePool, $event)"
+      ></app-name-card>
+    </ng-container>
+    <h4 *ngIf="namePool.length === 0">Everyone has a team</h4>
+  </section>
+  <section>
+    <h3>TEAM A</h3>
+    <ng-container *ngFor="let name of teamA; let i = index">
+      <app-name-card
+        [name]="name"
+        [location]="inTeamA"
+        (teamchangeEvent)="changeTeam(i, inTeamA, $event)"
+      ></app-name-card>
+    </ng-container>
+    <h4 *ngIf="teamA.length === 0">Team A is empty</h4>
+  </section>
+  <section>
+    <h3>TEAM ONE</h3>
+    <ng-container *ngFor="let name of teamOne; let i = index">
+      <app-name-card
+        [name]="name"
+        [location]="inTeamOne"
+        (teamchangeEvent)="changeTeam(i, inTeamOne, $event)"
+      ></app-name-card>
+    </ng-container>
+    <h4 *ngIf="teamOne.length === 0">Team One is empty</h4>
+  </section>
+
+</main>

@@ -1,3 +1,6 @@
+//setting a variable so we can access our interval ourside of its block
+let myInterval = null;
+
 //create counter to number our dives
 let counter = 0;
 
@@ -20,9 +23,26 @@ function addDiv(){
 
 };
 
-window.addEventListener('DOMContentLoaded', () =>{
-    for (let i = 0; i < 10; i++) {
-        setTimeout(addDiv, (i * 1000));
+// setting the box addition to happen ten times
+// window.addEventListener('DOMContentLoaded', () =>{
+//     for (let i = 0; i < 10; i++) {
+//         setTimeout(addDiv, (i * 1000));
+//     }
+//     // setInterval(addDiv, 1000);
+// });
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    myInterval = setInterval(addDive, 1000);
+})
+
+function stopAndStart() {
+    if (intervalRunning === true) {
+        clearInterval(myInterval);
+        intervalRunning = false;
+    } else {
+        myInterval = setInterval(addDiv, 1000);
+        intervalRunning = true;
     }
-    // setInterval(addDiv, 1000);
-});
+
+}

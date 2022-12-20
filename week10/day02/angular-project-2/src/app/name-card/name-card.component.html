@@ -1,0 +1,10 @@
+<div>
+    <p>{{ name }}</p>
+    <!-- <button *ngIf="location != 'Team A'">To A</button> -->
+    <button [hidden]="location === 'Team A'" 
+            (click)="changeTeam('A')">To A</button>
+    <button [hidden]="location === 'Team One'"
+            (click)="changeTeam('One')">To One</button>
+    <button [hidden]="location === 'Name Pool'"
+            (click)="changeTeam('Pool')">To Pool</button>
+</div>

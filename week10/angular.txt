@@ -1,0 +1,58 @@
+The angular Framework
+
+-- Angular is a JavaScript Framework for SPA (single-page application) development
+-- developed by google and udsed in all their online application
+
+-- Incorporates JavaScript (technically TypeScript), HTML and CSS
+
+-- a Single-page application can appear to have as many "pages" as you like from a user perspective
+-- but, it really only has one under the hood
+-- different "pages" are loaded into your components via a router
+
+-- the application only loads/refreshes what has changed
+
+-- new pages dont't make additional HTTP calls (unless they're specifically requiredd by a function, etc.)
+
+-- in order for the application to deploy properly, Everything in every component must compile.
+
+-- "state" is/are the current values of various properties
+    -- state is maintained, and any change to state that has to do with the view will result in a change to the view    
+    -- if you have a <p> tag whose content is being pulled from some JS variable, and the variable changes values,
+        the view will update to reflect to new state
+
+-- the "model" is a data from which the view is constructed
+-- the "view" is what the user sees
+-- when the model is updated, so is the view
+
+-- pages are assembled from components
+    -- each component consists of some TypeScript, some HTML, and some CSS
+    -- each component has it own set of files
+        -- HTML
+        -- CSS
+        -- TypeScript
+        -- testing files
+
+TO INSTALL THE ANGULAR CLI (command line interface) -- npm install -g @angular/CLI
+
+-- npm (node package manager) grabs all the dependencies/packages that Angular needs to run
+-- install 
+-- -g is global install, meaning you can now access the CLI from wherever
+
+-- Angular uses the ng prefix for all its actions, short for A-ng-ular
+
+-- to create a new project, navigate to where you want it to live (it will create it's own folder)
+    -- then type ng new <projectName>
+
+-- to create a server to launch your site
+    --ng serve
+    --ng serve --open // wil open a browser window
+    --ng serve --live-reload
+
+-- if you download an Angular app which has gitignored the dependencies
+    -- navigate to root directory and turn this -> npm i
+
+
+// inside your app
+.getignore - all the things that wont be uploaded to githum 
+.package-jason = keeps track of all your software dependencies
+        (software your app uses in the background)
